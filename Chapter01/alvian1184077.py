@@ -7,8 +7,8 @@ def prepoc(datapath):
     
     # shuffle data
     d = d.sample(frac=1)
-    d_train = d[:1152]
-    d_test = d[800:]
+    d_train = d[:1152] #menampung data train
+    d_test = d[800:] #menampung data test
 
     d_train_att = d_train.drop(['1'], axis=1)
     d_train_pass = d_train['1']
